@@ -86,7 +86,7 @@ clock.onload=function(e){
     min.addEventListener(
         'click',
         function(e){
-            clock.window.chrome.app.window.current().hide();
+            clock.window.chrome.app.window.current().minimize();
         }
     );
     
@@ -148,7 +148,7 @@ clock.alarm.mainVolume.connect(clock.alarm.context.destination);
 clock.alarm.oscillators={};
 
 clock.alarm.start=function(){
-    clock.window.chrome.app.window.current().show();
+    clock.window.chrome.app.window.current().restore();
     clock.alarm.killed=false;
     clock.alarm.sounding=true;
     clock.showSettings();
@@ -199,7 +199,7 @@ clock.alarm.stop=function(){
             continue;
         if(!oscillator.tone)
             continue;
-        oscillator.tone.noteOff && oscillator.tone.noteOff(0);
+        oscillator.tone.stop(0);
     }
 }
 
