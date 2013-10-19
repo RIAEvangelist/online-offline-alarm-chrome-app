@@ -1,8 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Alarm Clock - on & offline",
+    "name": "Alarm Clock - on & offline Free",
+    "short_name" : "Free Alarm",
     "description":"Alarm Clock that runs both on and off line as well as in the background",
-    "version": "0.0.1.0",
+    "version": "0.0.1.1",
+    "offline_enabled": true,
     "minimum_chrome_version": "23",
     "icons": {
         "16": "icon_16.png",
