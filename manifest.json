@@ -3,25 +3,25 @@
     "name": "Alarm Clock - on & offline Free",
     "short_name" : "Free Alarm",
     "description":"Alarm Clock that runs both on and off line as well as in the background",
-    "version": "0.0.1.1",
+    "version": "1.0.0.0",
     "offline_enabled": true,
-    "minimum_chrome_version": "23",
+    "minimum_chrome_version": "33",
     "icons": {
-        "16": "icon_16.png",
-        "32": "icon_32.png",
-        "64": "icon_64.png",
-        "128": "icon_128.png",
-        "256": "icon_256.png"
+        "16": "app/resources/icons/-16.png",
+        "32": "app/resources/icons/-32.png",
+        "64": "app/resources/icons/-64.png",
+        "128": "app/resources/icons/-128.png",
+        "256": "app/resources/icons/-256.png"
     },
     "app": {
         "background": {
             "scripts": [
-                "app.js"
-            ],
-            "persistent": true
+                "main.js"
+            ]
         }
     },
     "permissions":[
-        "power"
+        "power",
+        "storage"
     ]
 }
